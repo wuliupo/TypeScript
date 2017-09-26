@@ -1,4 +1,6 @@
-# 概述
+# Library Structures
+
+## 概述
 
 一般来讲，你*组织*声明文件的方式取决于库是如何被使用的。
 在JavaScript中一个库有很多使用方式，这就需要你书写声明文件去匹配它们。
@@ -7,7 +9,7 @@
 针对每种主要的库的组织模式，在[模版](./Templates.md)一节都有对应的文件。
 你可以利用它们帮助你快速上手。
 
-# 识别库的类型
+## 识别库的类型
 
 首先，我们先看一下TypeScript声明文件能够表示的库的类型。
 这里会简单展示每种类型的库的使用方式，如何去书写，还有一些真实案例。
@@ -271,7 +273,7 @@ console.log(y.reverseAndSort());
 
 使用[`global-modifying-module.d.ts`](./templates/global-modifying-module.d.ts.md)模版。
 
-# <a name="consuming-dependencies"></a>使用依赖
+## <a name="consuming-dependencies"></a>使用依赖
 
 可能会有以下几种依赖。
 
@@ -317,7 +319,7 @@ import * as someLib from 'someLib';
 
 *不要*使用`/// <reference`指令去声明UMD库的依赖！
 
-# 补充说明
+## 补充说明
 
 ## <a name="preventing-name-conflicts"></a>防止命名冲突
 

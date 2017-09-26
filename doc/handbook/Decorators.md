@@ -1,4 +1,6 @@
-# 介绍
+# 装饰器（Decorators）
+
+## 介绍
 
 随着TypeScript和ES6里引入了类，在一些场景下我们需要额外的特性来支持标注或修改类及其成员。
 装饰器（Decorators）为我们在类的声明及成员上通过元编程语法添加标注提供了一种方式。
@@ -25,7 +27,7 @@ tsc --target ES5 --experimentalDecorators
 }
 ```
 
-# 装饰器
+## 装饰器
 
 *装饰器*是一种特殊类型的声明，它能够被附加到[类声明](#class-decorators)，[方法](#method-decorators)，[访问符](#accessor-decorators)，[属性](#property-decorators)或[参数](#parameter-decorators)上。
 装饰器使用`@expression`这种形式，`expression`求值后必须为一个函数，它会在运行时被调用，被装饰的声明信息做为参数传入。

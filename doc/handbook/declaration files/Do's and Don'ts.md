@@ -1,4 +1,4 @@
-# 普通类型
+## Do & Not Do
 
 ## `Number`，`String`，`Boolean`和`Object`
 
@@ -26,7 +26,7 @@ function reverse(s: string): string;
 
 <!-- TODO: More -->
 
-# 回调函数类型
+## 回调函数类型
 
 ## 回调函数返回值类型
 
@@ -104,7 +104,7 @@ declare function beforeAll(action: (done: DoneFn) => void, timeout?: number): vo
 *为什么*：回调函数总是可以忽略某个参数的，因此没必要为参数少的情况写重载。
 参数少的回调函数首先允许错误类型的函数被传入，因为它们匹配第一个重载。
 
-# 函数重载
+## 函数重载
 
 ## 顺序
 

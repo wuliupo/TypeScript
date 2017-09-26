@@ -1,11 +1,13 @@
-# 介绍
+# JSX
+
+## 介绍
 
 [JSX](https://facebook.github.io/jsx/)是一种嵌入式的类似XML的语法。
 它可以被转换成合法的JavaScript，尽管转换的语义是依据不同的实现而定的。
 JSX因[React](http://facebook.github.io/react/)框架而流行，但是也被其它应用所使用。
 TypeScript支持内嵌，类型检查和将JSX直接编译为JavaScript。
 
-# 基本用法
+## 基本用法
 
 想要使用JSX必须做两件事：
 
@@ -29,7 +31,7 @@ TypeScript具有三种JSX模式：`preserve`，`react`和`react-native`。
 
 > *注意：`React`标识符是写死的硬编码，所以你必须保证React（大写的R）是可用的。*
 
-# `as`操作符
+## `as`操作符
 
 回想一下怎么写类型断言：
 
@@ -49,7 +51,7 @@ var foo = bar as foo;
 
 `as`操作符在`.ts`和`.tsx`里都可用，并且与其它类型断言行为是等价的。
 
-# 类型检查
+## 类型检查
 
 为了理解JSX的类型检查，你必须首先理解固有元素与基于值的元素之间的区别。
 假设有这样一个JSX表达式`<expr />`，`expr`可能引用环境自带的某些东西（比如，在DOM环境里的`div`或`span`）或者是你自定义的组件。
@@ -238,14 +240,14 @@ var badProps = {};
 <foo {...badProps} />; // 错误
 ```
 
-# JSX结果类型
+## JSX结果类型
 
 默认地JSX表达式结果的类型为`any。
 你可以自定义这个类型，通过指定`JSX.Element`接口。
 然而，不能够从接口里检索元素，属性或JSX的子元素的类型信息。
 它是一个黑盒。
 
-# 嵌入的表达式
+## 嵌入的表达式
 
 JSX允许你使用`{ }`标签来内嵌表达式。
 
@@ -264,7 +266,7 @@ var a = <div>
 </div>
 ```
 
-# React整合
+## React整合
 
 要想一起使用JSX和React，你应该使用[React类型定义](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react)。
 这些类型声明定义了`JSX`合适命名空间来使用React。

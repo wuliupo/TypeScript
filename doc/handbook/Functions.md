@@ -1,11 +1,13 @@
-# 介绍
+# 函数
+
+## 介绍
 
 函数是JavaScript应用程序的基础。
 它帮助你实现抽象层，模拟类，信息隐藏和模块。
 在TypeScript里，虽然已经支持类，命名空间和模块，但函数仍然是主要的定义*行为*的地方。
 TypeScript为JavaScript函数添加了额外的功能，让我们可以更容易地使用。
 
-# 函数
+## 函数
 
 和JavaScript一样，TypeScript函数可以创建有名字的函数和匿名函数。
 你可以随意选择适合应用程序的方式，不论是定义一系列API函数还是只使用一次的函数。
@@ -34,7 +36,7 @@ function addToZ(x, y) {
 }
 ```
 
-# 函数类型
+## 函数类型
 
 ## 为函数定义类型
 
@@ -97,7 +99,7 @@ let myAdd: (baseValue: number, increment: number) => number =
 这叫做“按上下文归类”，是类型推论的一种。
 它帮助我们更好地为程序指定类型。
 
-# 可选参数和默认参数
+## 可选参数和默认参数
 
 TypeScript里的每个函数参数都是必须的。
 这不是指不能传递`null`或`undefined`作为参数，而是说编译器检查用户是否为每个参数都传入了值。
@@ -185,7 +187,7 @@ let result3 = buildName("Bob", "Adams");         // okay and returns "Bob Adams"
 let result4 = buildName(undefined, "Adams");     // okay and returns "Will Adams"
 ```
 
-# 剩余参数
+## 剩余参数
 
 必要参数，默认参数和可选参数有个共同点：它们表示某一个参数。
 有时，你想同时操作多个参数，或者你并不知道会有多少参数传递进来。
@@ -215,7 +217,7 @@ function buildName(firstName: string, ...restOfName: string[]) {
 let buildNameFun: (fname: string, ...rest: string[]) => string = buildName;
 ```
 
-# `this`
+## `this`
 
 学习使用JavaScript里`this`就好比一场成年礼。
 由于TypeScript是JavaScript的超集，TypeScript程序员也需要弄清`this`工作机制并且当有bug的时候能够找出错误所在。
@@ -395,7 +397,7 @@ class Handler {
 另一方面，方法只会被创建一次，添加到`Handler`的原型链上。
 它们在不同`Handler`对象间是共享的。
 
-# 重载
+## 重载
 
 JavaScript本身是个动态语言。
 JavaScript里函数根据传入不同的参数而返回不同类型的数据是很常见的。

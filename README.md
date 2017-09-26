@@ -1,6 +1,7 @@
 # TypeScript
 
 ![TypeScript](./misc/ts_logo.jpg)
+
  [TypeScript 2.5 发布！](https://blogs.msdn.microsoft.com/typescript/2017/08/31/announcing-typescript-2-5/)
 
 TypeScript是JavaScript的超集并且能够编译输出为纯粹的JavaScript.

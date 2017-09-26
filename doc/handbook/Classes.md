@@ -1,10 +1,12 @@
-# 介绍
+# 类
+
+## 介绍
 
 传统的JavaScript程序使用函数和基于原型的继承来创建可重用的组件，但对于熟悉使用面向对象方式的程序员来讲就有些棘手，因为他们用的是基于类的继承并且对象是由类构建出来的。
 从ECMAScript 2015，也就是ECMAScript 6开始，JavaScript程序员将能够使用基于类的面向对象的方式。
 使用TypeScript，我们允许开发者现在就使用这些特性，并且编译后的JavaScript可以在所有主流浏览器和平台上运行，而不需要等到下个JavaScript版本。
 
-# 类
+## 类
 
 下面看一个使用类的例子：
 
@@ -31,7 +33,7 @@ let greeter = new Greeter("world");
 最后一行，我们使用`new`构造了`Greeter`类的一个实例。
 它会调用之前定义的构造函数，创建一个`Greeter`类型的新对象，并执行构造函数初始化它。
 
-# 继承
+## 继承
 
 在TypeScript里，我们可以使用常用的面向对象模式。
 当然，基于类的程序设计中最基本的模式是允许使用继承来扩展现有的类。
@@ -86,7 +88,7 @@ Galloping...
 Tommy the Palomino moved 34m.
 ```
 
-# 公共，私有与受保护的修饰符
+## 公共，私有与受保护的修饰符
 
 ## 默认为`public`
 
@@ -216,7 +218,7 @@ let howard = new Employee("Howard", "Sales");
 let john = new Person("John"); // Error: The 'Person' constructor is protected
 ```
 
-# readonly修饰符
+## readonly修饰符
 
 你可以使用`readonly`关键字将属性设置为只读的。
 只读属性必须在声明时或构造函数里被初始化。
@@ -254,7 +256,7 @@ class Animal {
 参数属性通过给构造函数参数添加一个访问限定符来声明。
 使用`private`限定一个参数属性会声明并初始化一个私有成员；对于`public`和`protected`来说也是一样。
 
-# 存取器
+## 存取器
 
 TypeScript支持通过getters/setters来截取对对象成员的访问。
 它能帮助你有效的控制对对象成员的访问。
@@ -316,7 +318,7 @@ if (employee.fullName) {
 其次，只带有`get`不带有`set`的存取器自动被推断为`readonly`。
 这在从代码生成`.d.ts`文件时是有帮助的，因为利用这个属性的用户会看到不允许够改变它的值。
 
-# 静态属性
+## 静态属性
 
 到目前为止，我们只讨论了类的实例成员，那些仅当类被实例化的时候才会被初始化的属性。
 我们也可以创建类的静态成员，这些属性存在于类本身上面而不是类的实例上。
@@ -342,7 +344,7 @@ console.log(grid1.calculateDistanceFromOrigin({x: 10, y: 10}));
 console.log(grid2.calculateDistanceFromOrigin({x: 10, y: 10}));
 ```
 
-# 抽象类
+## 抽象类
 
 抽象类做为其它派生类的基类使用。
 它们一般不会直接被实例化。
@@ -399,7 +401,7 @@ department.printMeeting();
 department.generateReports(); // error: method doesn't exist on declared abstract type
 ```
 
-# 高级技巧
+## 高级技巧
 
 ## 构造函数
 

@@ -1,9 +1,11 @@
+# Modules
+
 > **关于术语的一点说明:**
 请务必注意一点，TypeScript 1.5里术语名已经发生了变化。
 “内部模块”现在称做“命名空间”。
 “外部模块”现在则简称为“模块”，这是为了与[ECMAScript 2015](http://www.ecma-international.org/ecma-262/6.0/)里的术语保持一致，(也就是说 `module X {` 相当于现在推荐的写法 `namespace X {`)。
 
-# 介绍
+## 介绍
 
 从ECMAScript 2015开始，JavaScript引入了模块的概念。TypeScript也沿用这个概念。
 
@@ -18,7 +20,7 @@
 
 TypeScript与ECMAScript 2015一样，任何包含顶级`import`或者`export`的文件都被当成一个模块。
 
-# <a name="export"></a>导出
+## <a name="export"></a>导出
 
 ## 导出声明
 
@@ -86,7 +88,7 @@ export * from "./LettersOnlyValidator"; // exports class LettersOnlyValidator
 export * from "./ZipCodeValidator";  // exports class ZipCodeValidator
 ```
 
-# <a name="import"></a>导入
+## <a name="import"></a>导入
 
 模块的导入操作与导出一样简单。
 可以使用以下`import`形式之一来导入其它模块中的导出内容。
@@ -123,7 +125,7 @@ let myValidator = new validator.ZipCodeValidator();
 import "./my-module.js";
 ```
 
-# 默认导出
+## 默认导出
 
 每个模块都可以有一个`default`导出。
 默认导出使用`default`关键字标记；并且一个模块只能够有一个`default`导出。
@@ -210,7 +212,7 @@ import num from "./OneTwoThree";
 console.log(num); // "123"
 ```
 
-# `export =` 和 `import = require()`
+## `export =` 和 `import = require()`
 
 CommonJS和AMD都有一个`exports`对象的概念，它包含了一个模块的所有导出内容。
 
@@ -252,7 +254,7 @@ strings.forEach(s => {
 });
 ```
 
-# 生成模块代码
+## 生成模块代码
 
 根据编译时指定的模块目标参数，编译器会生成相应的供Node.js ([CommonJS](http://wiki.commonjs.org/wiki/CommonJS))，Require.js ([AMD](https://github.com/amdjs/amdjs-api/wiki/AMD))，isomorphic ([UMD](https://github.com/umdjs/umd)), [SystemJS](https://github.com/systemjs/systemjs)或[ECMAScript 2015 native modules](http://www.ecma-international.org/ecma-262/6.0/#sec-modules) (ES6)模块加载系统使用的代码。
 想要了解生成代码中`define`，`require` 和 `register`的意义，请参考相应模块加载器的文档。
@@ -322,7 +324,7 @@ import { something } from "./mod";
 export let t = something + 1;
 ```
 
-# 简单示例
+## 简单示例
 
 下面我们来整理一下前面的验证器实现，每个模块只有一个命名的导出。
 
@@ -395,7 +397,7 @@ strings.forEach(s => {
 });
 ```
 
-# 可选的模块加载和其它高级加载场景
+## 可选的模块加载和其它高级加载场景
 
 有时候，你只想在某种条件下才加载某个模块。
 在TypeScript里，使用下面的方式来实现它和其它的高级加载场景，我们可以直接调用模块加载器并且可以保证类型完全。
@@ -456,7 +458,7 @@ if (needZipValidation) {
 }
 ```
 
-# 使用其它的JavaScript库
+## 使用其它的JavaScript库
 
 要想描述非TypeScript编写的类库的类型，我们需要声明类库所暴露出的API。
 
@@ -573,7 +575,7 @@ mathLib.isPrime(2); // ERROR: can't use the global definition from inside a modu
 mathLib.isPrime(2);
 ```
 
-# 创建模块结构指导
+## 创建模块结构指导
 
 ## 尽可能地在顶层导出
 

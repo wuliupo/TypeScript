@@ -102,7 +102,7 @@ let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Ri
 var directions = [0 /* Up */, 1 /* Down */, 2 /* Left */, 3 /* Right */];
 ```
 
-# 外部枚举
+## 外部枚举
 
 外部枚举用来描述已经存在的枚举类型的形状。
 

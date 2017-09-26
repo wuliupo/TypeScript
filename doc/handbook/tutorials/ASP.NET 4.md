@@ -23,7 +23,7 @@
 
 运行此应用以确保它能正常工作。
 
-# 添加 TypeScript
+## 添加 TypeScript
 
 下一步我们为 TypeScript 添加一个文件夹。
 
@@ -126,7 +126,7 @@ function sayHello() {
 
 这就是你需要知道的在ASP.NET中使用TypeScript的基本知识了。接下来，我们引入Angular，写一个简单的Angular程序示例。
 
-# 添加 Angular 2
+## 添加 Angular 2
 
 ## 使用 NPM 下载所需的包
 

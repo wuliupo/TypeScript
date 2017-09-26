@@ -1,9 +1,11 @@
+# TypeScript和Gulp
+
 这篇快速上手指南将教你如何使用[Gulp](http://gulpjs.com)构建TypeScript，和如何在Gulp管道里添加[Browserify](http://browserify.org)，[uglify](http://lisperator.net/uglifyjs/)或[Watchify](https://github.com/substack/watchify)。
 它还包涵了[Babel](https://babeljs.io/)的功能，通过使用[Babelify](https://github.com/babel/babelify)。
 
 这里假设你已经在使用[Node.js](https://nodejs.org/)和[npm](https://www.npmjs.com/)了。
 
-# 创建简单工程
+## 创建简单工程
 
 我们首先创建一个新目录。
 命名为`proj`，也可以使用任何你喜欢的名字。
@@ -110,7 +112,7 @@ node dist/main.js
 
 程序应该能够打印出“Hello from TypeScript!”。
 
-# 向代码里添加模块
+## 向代码里添加模块
 
 在使用Browserify前，让我们先构建一下代码然后再添加一些混入的模块。
 这个结构将是你在真实应用程序中会用到的。
@@ -156,7 +158,7 @@ node dist/main.js
 注意，即使我们使用了ES2015的模块语法，TypeScript还是会生成Node.js使用的CommonJS模块。
 我们在这个教程里会一直使用CommonJS模块，但是你可以通过修改`module`选项来改变这个行为。
 
-# Browserify
+## Browserify
 
 现在，让我们把这个工程由Node.js环境移到浏览器环境里。
 因此，我们将把所有模块捆绑成一个JavaScript文件。
@@ -251,7 +253,7 @@ gulp.task("default", ["copy-html"], function () {
 你要打开调试器并在`main.ts`里打一个断点，看看`source maps`是否能工作。
 当你刷新页面时，代码会停在断点处，从而你就能够调试`greet.ts`。
 
-# Watchify，Babel和Uglify
+## Watchify，Babel和Uglify
 
 现在代码已经用Browserify和tsify捆绑在一起了，我们可以使用Browserify插件为构建添加一些特性。
 

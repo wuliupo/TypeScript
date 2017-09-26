@@ -1,16 +1,18 @@
-# 介绍
+# 错误信息
+
+## 介绍
 
 下面列出了一些在使用TypeScript语言和编译器过程中常见的容易让人感到困惑的错误信息。
 
-# 令人困惑的常见错误
+## 令人困惑的常见错误
 
-## "tsc.exe" exited with error code 1
+> "tsc.exe" exited with error code 1
 
 *修复：*
 
 * 检查文件编码，确保为UTF-8 - [https://typescript.codeplex.com/workitem/1587](https://typescript.codeplex.com/workitem/1587)
 
-## external module XYZ cannot be resolved
+> external module XYZ cannot be resolved
 
 *修复：*
 

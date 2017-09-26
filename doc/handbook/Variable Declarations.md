@@ -10,7 +10,7 @@
 如果你之前使用JavaScript时没有特别在意，那么这节内容会唤起你的回忆。
 如果你已经对`var`声明的怪异之处了如指掌，那么你可以轻松地略过这节。
 
-# `var` 声明
+## `var` 声明
 
 一直以来我们都是通过`var`关键字定义JavaScript变量。
 
@@ -178,7 +178,7 @@ for (var i = 0; i < 10; i++) {
 这种奇怪的形式我们已经司空见惯了。
 参数`i`会覆盖`for`循环里的`i`，但是因为我们起了同样的名字，所以我们不用怎么改`for`循环体里的代码。
 
-# `let` 声明
+## `let` 声明
 
 现在你已经知道了`var`存在一些问题，这恰好说明了为什么用`let`语句来声明变量。
 除了名字不同外，`let`与`var`的写法一致。
@@ -383,7 +383,7 @@ for (let i = 0; i < 10 ; i++) {
 9
 ```
 
-# `const` 声明
+## `const` 声明
 
 `const` 声明是声明变量的另一种方式。
 
@@ -420,7 +420,7 @@ kitty.numLives--;
 幸运的是，TypeScript允许你将对象的成员设置成只读的。
 [接口](./Interfaces.md)一章有详细说明。
 
-# `let` vs. `const`
+## `let` vs. `const`
 
 现在我们有两种作用域相似的声明方式，我们自然会问到底应该使用哪个。
 与大多数泛泛的问题一样，答案是：依情况而定。
@@ -434,7 +434,7 @@ kitty.numLives--;
 
 跟据你的自己判断，如果合适的话，与团队成员商议一下。
 
-# 解构
+## 解构
 
 Another TypeScript已经可以解析其它 ECMAScript 2015 特性了。
 完整列表请参见 [the article on the Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)。

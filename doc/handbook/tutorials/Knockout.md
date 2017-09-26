@@ -1,10 +1,12 @@
+# TypeScript和Knockout.js
+
 > 注意： 此教程已从官方删除
 
 这个快速上手指南会告诉你如何结合使用TypeScript和[Knockout.js](http://knockoutjs.com/)。
 
 这里我们假设你已经会使用[Node.js](https://nodejs.org/)和[npm](https://www.npmjs.com/)
 
-# 新建工程
+## 新建工程
 
 首先，我们新建一个目录。
 暂时命名为`proj`，当然了你可以使用任何喜欢的名字。
@@ -31,7 +33,7 @@ mkdir src
 mkdir built
 ```
 
-# 初始化工程
+## 初始化工程
 
 现在将这个文件夹转换为npm包。
 
@@ -43,7 +45,7 @@ npm init
 除了入口点外其它设置都可以使用默认值。
 你可以随时到生成的`package.json`文件里修改这些设置。
 
-# 安装构建依赖
+## 安装构建依赖
 
 首先确保TypeScript已经全局安装。
 
@@ -57,7 +59,7 @@ npm install -g typescript
 npm install --save @types/knockout
 ```
 
-# 获取运行时依赖
+## 获取运行时依赖
 
 我们需要Knockout和RequireJS。
 [RequireJS](http://www.requirejs.org/)是一个库，它可以让我们在运行时异步地加载模块。
@@ -79,7 +81,7 @@ mkdir externals
 然后[下载Knockout](http://knockoutjs.com/downloads/index.html)和[下载RequireJS](http://www.requirejs.org/docs/download.html#latest)到这个目录里。
 最新的压缩后版本就可以。
 
-# 添加TypeScript配置文件
+## 添加TypeScript配置文件
 
 下面我们想把所有的TypeScript文件整合到一起 - 包括自己写的和必须的声明文件。
 
@@ -111,7 +113,7 @@ mkdir externals
 
 你可以在[这里](../tsconfig.json.md)查看更多关于`tsconfig.json`文件的信息
 
-# 写些代码
+## 写些代码
 
 下面我们使用Knockout写一段TypeScript代码。
 首先，在`src`目录里新建一个`hello.ts`文件。
@@ -182,7 +184,7 @@ require.config({
 然后我们再在`require-config.js`里映射外部依赖，这样RequireJS就能知道到哪里去查找它们。
 最后，使用我们要去加载的模块去调用`require`。
 
-# 将所有部分整合在一起
+## 将所有部分整合在一起
 
 运行
 

@@ -1,10 +1,12 @@
+# React还有webpack
+
 这篇指南将会教你如何将TypeScript和[React](http://facebook.github.io/react/)还有[webpack](http://webpack.github.io/)结合在一起使用。
 
 如果你正在做一个全新的工程，可以先阅读这篇[React快速上手指南](./React.md)。
 
 否则，我们假设已经在使用[Node.js](https://nodejs.org/)和[npm](https://www.npmjs.com/)。
 
-# 初始化项目结构
+## 初始化项目结构
 
 让我们新建一个目录。
 将会命名为`proj`，但是你可以改成任何你喜欢的名字。
@@ -37,7 +39,7 @@ cd ..
 
 Webpack会帮助我们生成`dist`目录。
 
-# 初始化工程
+## 初始化工程
 
 现在把这个目录变成npm包。
 
@@ -49,7 +51,7 @@ npm init
 你可以使用默认项除了开始脚本。
 当然，你也可以随时到生成的`package.json`文件里修改。
 
-# 安装依赖
+## 安装依赖
 
 首先确保已经全局安装了Webpack。
 
@@ -84,7 +86,7 @@ source-map-loader使用TypeScript输出的sourcemap文件来告诉webpack何时�
 注意我们安装TypeScript为一个开发依赖。
 我们还可以使用`npm link typescript`来链接TypeScript到一个全局拷贝，但这不是常见用法。
 
-# 添加TypeScript配置文件
+## 添加TypeScript配置文件
 
 我们想将TypeScript文件整合到一起 - 这包括我们写的源码和必要的声明文件。
 
@@ -109,7 +111,7 @@ source-map-loader使用TypeScript输出的sourcemap文件来告诉webpack何时�
 
 你可以在[这里](../tsconfig.json.md)了解更多关于`tsconfig.json`文件的说明。
 
-# 写些代码
+## 写些代码
 
 下面使用React写一段TypeScript代码。
 首先，在`src/components`目录下创建一个名为`Hello.tsx`的文件，代码如下：
@@ -185,7 +187,7 @@ React和React-DOM的npm包里包含了独立的`.js`文件，你可以在页面�
 可以随意地将它们拷贝到其它目录下，或者从CDN上引用。
 Facebook在CND上提供了一系列可用的React版本，你可以在这里查看[更多内容](http://facebook.github.io/react/downloads.html#development-vs.-production-builds)。
 
-# 创建一个webpack配置文件
+## 创建一个webpack配置文件
 
 在工程根目录下创建一个`webpack.config.js`文件。
 
@@ -236,7 +238,7 @@ module.exports = {
 
 你可以在[这里](http://webpack.github.io/docs/configuration.html)了解更多如何配置webpack。
 
-# 整合在一起
+## 整合在一起
 
 执行：
 

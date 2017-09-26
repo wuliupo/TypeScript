@@ -1,4 +1,6 @@
-# 2.1
+# Roadmap
+
+## 2.1
 
 * 调查 [Function bind 操作符](https://github.com/Microsoft/TypeScript/issues/3508)
 * [支持工程引用](https://github.com/Microsoft/TypeScript/issues/3469)
@@ -7,7 +9,7 @@
 * Language Service API里支持代码重构功能
 * [扁平化声明](https://github.com/Microsoft/TypeScript/issues/4433)
 
-# 2.0
+## 2.0
 
 * 切换到[基于转换的生成器](https://github.com/Microsoft/TypeScript/issues/5595)
 * [支持ES5/ES3 `async`/`await`](https://github.com/Microsoft/TypeScript/issues/1664)
@@ -30,7 +32,7 @@
 * 支持[外部辅助代码库](https://github.com/Microsoft/TypeScript/issues/3364)
 * 调查[语言服务的可扩展性](https://github.com/Microsoft/TypeScript/issues/6508)
 
-# 1.8
+## 1.8
 
 * [在TypeScript编译时使用`--allowjs`允许JavaScript](https://github.com/Microsoft/TypeScript/issues/4792)
 * [在循环里允许捕获的`let`/`const`](https://github.com/Microsoft/TypeScript/issues/3915)
@@ -56,7 +58,7 @@
 * [JSX代码在VS 2015里高亮](https://github.com/Microsoft/TypeScript/issues/4835)
 * 发布[TypeScript NuGet 包](https://github.com/Microsoft/TypeScript/issues/3940)
 
-# 1.7
+## 1.7
 
 * [ES7幂运算符](https://github.com/Microsoft/TypeScript/issues/4812)
 * [多态的`this`类型](https://github.com/Microsoft/TypeScript/pull/4910)
@@ -65,7 +67,7 @@
 * [为ES6支持`async`/`await`(Node v4)](https://github.com/Microsoft/TypeScript/pull/5231)
 * [增强的字面量初始化器解构检查](https://github.com/Microsoft/TypeScript/pull/4598)
 
-# 1.6
+## 1.6
 
 * [ES6 Generators](https://github.com/Microsoft/TypeScript/issues/2873)
 * [Local types](https://github.com/Microsoft/TypeScript/pull/3266)
@@ -82,7 +84,7 @@
 * [类和接口的声明合并](https://github.com/Microsoft/TypeScript/pull/3333)
 * 新增[--init](https://github.com/Microsoft/TypeScript/issues/3079)
 
-# 1.5
+## 1.5
 
 * 支持[解构](https://github.com/Microsoft/TypeScript/pull/1346)
 * 支持[展开操作符](https://github.com/Microsoft/TypeScript/pull/1931)
@@ -110,7 +112,7 @@
 * 支持[Visual Studio 2015的tsconfig.json](https://github.com/Microsoft/TypeScript/issues/3124)
 * 增强[Visual Studio 2013的模块字面量高亮](https://github.com/Microsoft/TypeScript/pull/2026)
 
-# 1.4
+## 1.4
 
 * 支持[联合类型和类型保护](https://github.com/Microsoft/TypeScript/pull/824)
 * 新增[--noEmitOnError](https://github.com/Microsoft/TypeScript/pull/966)
@@ -121,7 +123,7 @@
 * 支持[Const enums](https://github.com/Microsoft/TypeScript/issues/1029)
 * 导出语言服务公共API
 
-# 1.3
+## 1.3
 
 * 为新的编译器重写语言服务
 * 支持[受保护的成员](https://github.com/Microsoft/TypeScript/pull/688) in classes

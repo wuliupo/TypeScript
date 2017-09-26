@@ -1,7 +1,9 @@
+# Consumption
+
 在TypeScript 2.0，获取、使用和查找声明文件变得十分容易。
 这篇文章将详细说明怎么做这三件事。
 
-# 下载
+## 下载
 
 在TypeScript 2.0以上的版本，获取类型声明文件只需要使用npm。
 
@@ -11,7 +13,7 @@
 npm install --save @types/lodash
 ```
 
-# 使用
+## 使用
 
 下载完后，就可以直接在TypeScript里使用lodash了。
 不论是在模块里还是全局代码里使用。
@@ -29,7 +31,7 @@ _.padStart("Hello TypeScript!", 20, " ");
 _.padStart("Hello TypeScript!", 20, " ");
 ```
 
-# 查找
+## 查找
 
 大多数情况下，类型声明包的名字总是与它们在`npm`上的包的名字相同，但是有`@types/`前缀，
   但如果你需要的话，你可以在[https://aka.ms/types](https://aka.ms/types)这里查找你喜欢的库。

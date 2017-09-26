@@ -1,3 +1,4 @@
+# 从 JavaScript 迁移
 TypeScript不是存在于真空中。
 它从JavaScript生态系统和大量现存的JavaScript而来。
 将JavaScript代码转换成TypeScript虽乏味却不是难事。
@@ -6,7 +7,7 @@ TypeScript不是存在于真空中。
 
 如果你打算要转换一个React工程，推荐你先阅读[React转换指南](https://github.com/Microsoft/TypeScript-React-Conversion-Guide#typescript-react-conversion-guide)。
 
-# 设置目录
+## 设置目录
 
 如果你在写纯JavaScript，你大概是想直接运行这些JavaScript文件，
 这些文件存在于`src`，`lib`或`dist`目录里，它们可以按照预想运行。
@@ -31,7 +32,7 @@ projectRoot
 
 如果你在`src`目录外还有`tests`文件夹，那么在`src`里可以有一个`tsconfig.json`文件，在`tests`里还可以有一个。
 
-# 书写配置文件
+## 书写配置文件
 
 TypeScript使用`tsconfig.json`文件管理工程配置，例如你想包含哪些文件和进行哪些检查。
 让我们先创建一个简单的工程配置文件：
@@ -71,7 +72,7 @@ TypeScript使用`tsconfig.json`文件管理工程配置，例如你想包含哪�
 
 TypeScript还能发现那些执行不到的代码和标签，你可以通过设置`allowUnreachableCode`和`allowUnusedLabels`选项来禁用。
 
-# 与构建工具进行集成
+## 与构建工具进行集成
 
 在你的构建管道中可能包含多个步骤。
 比如为每个文件添加一些内容。
@@ -132,7 +133,7 @@ module.exports = {
 
 你可以在[React和Webpack教程](./React & Webpack.md)里找到使用Webpack的例子。
 
-# 转换到TypeScript文件
+## 转换到TypeScript文件
 
 到目前为止，你已经做好了使用TypeScript文件的准备。
 第一步，将`.js`文件重命名为`.ts`文件。

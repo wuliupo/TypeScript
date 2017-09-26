@@ -1,3 +1,5 @@
+# 5分钟了解TypeScript
+
 让我们使用TypeScript来创建一个简单的Web应用。
 
 ## 安装TypeScript
@@ -8,7 +10,7 @@
 * 安装Visual Studio的TypeScript插件
 
 Visual Studio 2017和Visual Studio 2015 Update 3默认包含了TypeScript。
-如果你的Visual Studio还没有安装TypeScript，你可以[下载](/#download-links)它。
+如果你的Visual Studio还没有安装TypeScript，你可以[下载](http://www.microsoft.com/en-us/download/details.aspx?id=48593)它。
 
 针对使用npm的用户：
 

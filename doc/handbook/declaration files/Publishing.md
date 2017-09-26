@@ -1,3 +1,5 @@
+# 发布
+
 现在我们已经按照指南里的步骤写好一个声明文件，是时候把它发布到npm了。
 有两种主要方式用来发布声明文件到npm：
 
@@ -7,7 +9,7 @@
 如果你能控制要使用你发布的声明文件的那个npm包的话，推荐第一种方式。
 这样的话，你的声明文件与JavaScript总是在一起传递。
 
-# 包含声明文件到你的npm包
+## 包含声明文件到你的npm包
 
 如果你的包有一个主`.js`文件，你还是需要在`package.json`里指定主声明文件。
 设置`types`属性指向捆绑在一起的声明文件。
@@ -91,7 +93,7 @@
 
 <!-- TODO: more about this. -->
 
-# 发布到[@types](https://www.npmjs.com/~types)
+## 发布到[@types](https://www.npmjs.com/~types)
 
 [@types](https://www.npmjs.com/~types)下面的包是从[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)里自动发布的，通过[types-publisher工具](https://github.com/Microsoft/types-publisher)。
 如果想让你的包发布为@types包，提交一个pull request到[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)。

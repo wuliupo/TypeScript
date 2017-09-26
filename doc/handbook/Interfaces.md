@@ -1,10 +1,12 @@
-# 介绍
+# 接口
+
+## 介绍
 
 TypeScript的核心原则之一是对值所具有的*结构*进行类型检查。
 它有时被称做“鸭式辨型法”或“结构性子类型化”。
 在TypeScript里，接口的作用就是为这些类型命名和为你的代码或第三方代码定义契约。
 
-# 接口初探
+## 接口初探
 
 下面通过一个简单示例来观察接口是如何工作的：
 
@@ -44,7 +46,7 @@ printLabel(myObj);
 
 还有一点值得提的是，类型检查器不会去检查属性的顺序，只要相应的属性存在并且类型也是对的就可以。
 
-# 可选属性
+## 可选属性
 
 接口里的属性不全都是必需的。
 有些是只在某些条件下存在，或者根本不存在。
@@ -98,7 +100,7 @@ function createSquare(config: SquareConfig): { color: string; area: number } {
 let mySquare = createSquare({color: "black"});
 ```
 
-# 只读属性
+## 只读属性
 
 一些对象属性只能在对象刚刚创建的时候修改其值。
 你可以在属性名前用`readonly`来指定只读属性:
@@ -141,7 +143,7 @@ a = ro as number[];
 最简单判断该用`readonly`还是`const`的方法是看要把它做为变量使用还是做为一个属性。
 做为变量使用的话用`const`，若做为属性则使用`readonly`。
 
-# 额外的属性检查
+## 额外的属性检查
 
 我们在第一个例子里使用了接口，TypeScript让我们传入`{ size: number; label: string; }`到仅期望得到`{ label: string; }`的函数里。
 我们已经学过了可选属性，并且知道他们在“option bags”模式里很有用。
@@ -209,7 +211,7 @@ let mySquare = createSquare(squareOptions);
 就是说你遇到了额外类型检查出的错误，比如“option bags”，你应该去审查一下你的类型声明。
 在这里，如果支持传入`color`或`colour`属性到`createSquare`，你应该修改`SquareConfig`定义来体现出这一点。
 
-# 函数类型
+## 函数类型
 
 接口能够描述JavaScript中对象拥有的各种各样的外形。
 除了描述带有属性的普通对象外，接口也可以描述函数类型。
@@ -258,7 +260,7 @@ mySearch = function(src, sub) {
 }
 ```
 
-# 可索引的类型
+## 可索引的类型
 
 与使用接口描述函数类型差不多，我们也可以描述那些能够“通过索引得到”的类型，比如`a[10]`或`ageMap["daniel"]`。
 可索引类型具有一个*索引签名*，它描述了对象索引的类型，还有相应的索引返回值类型。
@@ -322,7 +324,7 @@ myArray[2] = "Mallory"; // error!
 
 你不能设置`myArray[2]`，因为索引签名是只读的。
 
-# 类类型
+## 类类型
 
 ## 实现接口
 
@@ -413,7 +415,7 @@ let analog = createClock(AnalogClock, 7, 32);
 
 因为`createClock`的第一个参数是`ClockConstructor`类型，在`createClock(AnalogClock, 7, 32)`里，会检查`AnalogClock`是否符合构造函数签名。
 
-# 继承接口
+## 继承接口
 
 和类一样，接口也可以相互继承。
 这让我们能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。
@@ -453,7 +455,7 @@ square.sideLength = 10;
 square.penWidth = 5.0;
 ```
 
-# 混合类型
+## 混合类型
 
 先前我们提过，接口能够描述JavaScript里丰富的类型。
 因为JavaScript其动态灵活的特点，有时你会希望一个对象可以同时具有上面提到的多种类型。
@@ -482,7 +484,7 @@ c.interval = 5.0;
 
 在使用JavaScript第三方库的时候，你可能需要像上面那样去完整地定义类型。
 
-# 接口继承类
+## 接口继承类
 
 当接口继承了一个类类型时，它会继承类的成员但不包括其实现。
 就好像接口声明了所有类中存在的成员，但并没有提供具体实现一样。

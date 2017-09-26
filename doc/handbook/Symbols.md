@@ -1,4 +1,6 @@
-# 介绍
+# Symbol
+
+## 介绍
 
 自ECMAScript 2015起，`symbol`成为了一种新的原生类型，就像`number`和`string`一样。
 
@@ -46,7 +48,7 @@ let c = new C();
 let className = c[getClassNameSymbol](); // "C"
 ```
 
-# 众所周知的Symbols
+## 众所周知的Symbols
 
 除了用户定义的symbols，还有一些已经众所周知的内置symbols。
 内置symbols用来表示语言内部的行为。

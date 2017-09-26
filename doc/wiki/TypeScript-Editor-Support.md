@@ -1,4 +1,4 @@
-# 快捷列表
+# 编辑器列表
 
 * [Atom](#atom)
 * [Eclipse](#eclipse)
@@ -11,39 +11,39 @@
 * [Visual Studio Code](#visual-studio-code)
 * [WebStorm](#webstorm)
 
-# Atom
+## Atom
 
 [Atom-TypeScript](https://atom.io/packages/atom-typescript)，由TypeStrong开发的针对Atom的TypeScript语言服务。
 
-# Eclipse
+## Eclipse
 
 [Eclipse TypeScript 插件](https://github.com/palantir/eclipse-typescript)，由Palantir开发的Eclipse插件。
 
-# Emacs
+## Emacs
 
 [tide](https://github.com/ananthakumaran/tide) - TypeScript Interactive Development Environment for Emacs
 
-# NetBeans
+## NetBeans
 
 * [nbts](https://github.com/Everlaw/nbts) - NetBeans TypeScript editor plugin
 * [Geertjan's TypeScript NetBeans Plugin](https://github.com/GeertjanWielenga/TypeScript)
 
-# Sublime Text
+## Sublime Text
 
 [Sublime的TypeScript插件](https://github.com/Microsoft/TypeScript-Sublime-Plugin)，可以通过[Package Control](https://packagecontrol.io/)来安装，支持Sublime Text 2和Sublime Text 3.
 
-# TypeScript Builder
+## TypeScript Builder
 
 [TypeScript Builder](http://www.typescriptbuilder.com/)，TypeScript专用IDE.
 
-# Vim
+## Vim
 
-### 语法高亮
+#### 语法高亮
 
 * [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)提供了语法文件用来高亮显示`.ts`和`.d.ts`。
 * [HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)提供了更多语法高亮和DOM关键字。
 
-### 语言服务工具
+#### 语言服务工具
 
 有两个主要的TypeScript插件：
 
@@ -59,7 +59,7 @@ endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 ```
 
-# Visual Studio 2013/2015
+## Visual Studio 2013/2015
 
 [Visual Studio](https://www.visualstudio.com/)里安装Microsoft Web Tools时就带了TypeScript。
 
@@ -67,10 +67,10 @@ TypeScript for Visual Studio 2015 在[这里](http://www.microsoft.com/en-us/dow
 
 TypeScript for Visual Studio 2013 在[这里](https://www.microsoft.com/en-us/download/details.aspx?id=48739)
 
-# Visual Studio Code
+## Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/)，是一个轻量级的跨平台编辑器，内置了对TypeScript的支持。
 
-# Webstorm
+## Webstorm
 
 [WebStorm](https://www.jetbrains.com/webstorm/)，同其它JetBrains IDEs一样，直接包含了对TypeScript的支持。

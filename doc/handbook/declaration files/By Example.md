@@ -1,4 +1,6 @@
-# 简介
+# 示例
+
+## 简介
 
 这篇指南的目的是教你如何书写高质量的TypeScript声明文件。
 我们在这里会展示一些API的文档，还有它们的使用示例，
@@ -15,7 +17,7 @@
 * [组织类型](#organizing-types)
 * [类](#classes)
 
-# 例子
+## 例子
 
 ## <a name="global-variables"></a>全局变量
 

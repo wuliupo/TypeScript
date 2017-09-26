@@ -70,7 +70,7 @@ public void Configure(IApplicationBuilder app)
 
 你可能需要重启VS，这样`UseDefaultFiles`和`UseStaticFiles`下面的波浪线才会消失。
 
-# 添加 TypeScript
+## 添加 TypeScript
 
 下一步我们为 TypeScript 添加一个文件夹。
 
@@ -230,7 +230,7 @@ gulp.task('default', function () {
 这就是你需要知道的在ASP.NET中使用TypeScript的基本知识了。
 接下来，我们引入Angular，写一个简单的Angular程序示例。
 
-# 添加 Angular 2
+## 添加 Angular 2
 
 ## 使用 NPM 下载依赖的包
 

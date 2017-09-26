@@ -1,4 +1,6 @@
-# 交叉类型（Intersection Types）
+# 高级类型
+
+## 交叉类型（Intersection Types）
 
 交叉类型是将多个类型合并为一个类型。
 这让我们可以把现有的多种类型叠加到一起成为一种类型，它包含了所需的所有类型的特性。
@@ -39,7 +41,7 @@ var n = jim.name;
 jim.log();
 ```
 
-# 联合类型（Union Types）
+## 联合类型（Union Types）
 
 联合类型与交叉类型很有关联，但是使用上却完全不同。
 偶尔你会遇到这种情况，一个代码库希望传入`number`或`string`类型的参数。
@@ -123,7 +125,7 @@ pet.swim();    // errors
 我们不能确定一个`Bird | Fish`类型的变量是否有`fly`方法。
 如果变量在运行时是`Fish`类型，那么调用`pet.fly()`就出错了。
 
-# 类型保护与区分类型（Type Guards and Differentiating Types）
+## 类型保护与区分类型（Type Guards and Differentiating Types）
 
 联合类型适合于那些值可以为不同类型的情况。
 但当我们想确切地了解是否为`Fish`时怎么办？
@@ -283,7 +285,7 @@ if (padder instanceof StringPadder) {
 
 以此顺序。
 
-# 可以为null的类型
+## 可以为null的类型
 
 TypeScript具有两种特殊的类型，`null`和`undefined`，它们分别具有值null和undefined.
 我们在[基础类型](./Basic Types.md)一节里已经做过简要说明。
@@ -385,7 +387,7 @@ function fixed(name: string | null): string {
 因为它无法跟踪所有对嵌套函数的调用，尤其是你将内层函数做为外层函数的返回值。
 如果无法知道函数在哪里被调用，就无法知道调用时`name`的类型。
 
-# 类型别名
+## 类型别名
 
 类型别名会给一个类型起个新名字。
 类型别名有时和接口很像，但是可以作用于原始值，联合类型，元组以及其它任何你需要手写的类型。
@@ -467,7 +469,7 @@ declare function interfaced(arg: Interface): Interface;
 
 另一方面，如果你无法通过接口来描述一个类型并且需要使用联合类型或元组类型，这时通常会使用类型别名。
 
-# 字符串字面量类型
+## 字符串字面量类型
 
 字符串字面量类型允许你指定字符串必须的固定值。
 在实际应用中，字符串字面量类型可以与联合类型，类型保护和类型别名很好的配合。
@@ -512,7 +514,7 @@ function createElement(tagName: string): Element {
 }
 ```
 
-# 可辨识联合（Discriminated Unions）
+## 可辨识联合（Discriminated Unions）
 
 你可以合并字符串字面量类型，联合类型，类型保护和类型别名来创建一个叫做*可辨识联合*的高级模式，它也称做*标签联合*或*代数数据类型*。
 可辨识联合在函数式编程很有用处。
@@ -616,7 +618,7 @@ function area(s: Shape) {
 如果你忘记了某个case，那么`s`将具有一个真实的类型并且你会得到一个错误。
 这种方式需要你定义一个额外的函数，但是在你忘记某个case的时候也更加明显。
 
-# 多态的`this`类型
+## 多态的`this`类型
 
 多态的`this`类型表示的是某个包含类或接口的*子类型*。
 这被称做*F*-bounded多态性。
@@ -671,7 +673,7 @@ let v = new ScientificCalculator(2)
 `multiply`将会返回`BasicCalculator`，它并没有`sin`方法。
 然而，使用`this`类型，`multiply`会返回`this`，在这里就是`ScientificCalculator`。
 
-# 索引类型（Index types）
+## 索引类型（Index types）
 
 使用索引类型，编译器就能够检查使用了动态属性名的代码。
 例如，一个常见的JavaScript模式是从对象中选取属性的子集。
@@ -755,7 +757,7 @@ let keys: keyof Map<number>; // string
 let value: Map<number>['foo']; // number
 ```
 
-# 映射类型
+## 映射类型
 
 一个常见的任务是将一个已知的类型每个属性都变为可选的：
 

@@ -1,3 +1,5 @@
+# TypeScript与React
+
 这篇快速上手指南会教你如何将TypeScript与[React](http://facebook.github.io/react/)结合起来使用。
 在最后，你将学到：
 
@@ -11,7 +13,7 @@
 这里假设你已经在使用[Node.js](https://nodejs.org/)和[npm](https://www.npmjs.com/)。
 并且已经了解了[React的基础知识](https://facebook.github.io/react/docs/hello-world.html)。
 
-# 安装create-react-app
+## 安装create-react-app
 
 我们之所以使用create-react-app是因为它能够为React工程设置一些有效的工具和权威的默认参数。
 它仅仅是一个用来搭建React工程的命令行工具而已。
@@ -20,7 +22,7 @@
 npm install -g create-react-app
 ```
 
-# 创建新工程
+## 创建新工程
 
 让我们首先创建一个叫做`my-app`的新工程：
 
@@ -52,7 +54,7 @@ my-app/
 * `public`包含了静态资源如HTML页面或图片。除了`index.html`文件外，其它的文件都可以删除。
 * `src`包含了TypeScript和CSS源码。`index.tsx`是强制使用的入口文件。
 
-# 运行工程
+## 运行工程
 
 通过下面的方式即可轻松地运行这个工程。
 
@@ -65,7 +67,7 @@ npm run start
 
 它会保持监听以方便我们快速地预览改动。
 
-# 测试工程
+## 测试工程
 
 测试也仅仅是一行命令的事儿：
 
@@ -77,7 +79,7 @@ npm run test
 好比是`npm run start`命令，当检测到有改动的时候Jest会自动地运行。
 如果喜欢的话，你还可以同时运行`npm run start`和`npm run test`，这样你就可以在预览的同时进行测试。
 
-# 生成生产环境的构建版本
+## 生成生产环境的构建版本
 
 在使用`npm run start`运行工程的时候，我们并没有生成一个优化过的版本。
 通常我们想给用户一个运行的尽可能快并在体积上尽可能小的代码。
@@ -95,7 +97,7 @@ npm run build
 大多数情况下你不需要生成生产环境的构建版本，
 但它可以帮助你衡量应用最终版本的体积大小。
 
-# 创建一个组件
+## 创建一个组件
 
 下面我们将要创建一个`Hello`组件。
 这个组件接收任意一个我们想对之打招呼的名字（我们把它叫做`name`），并且有一个可选数量的感叹号做为结尾（通过`enthusiasmLevel`）。
@@ -204,7 +206,7 @@ ReactDOM.render(
 TypeScript还有一种感叹号（`!`）结尾的语法，它会从前面的表达式里移除`null`和`undefined`。
 所以我们也*可以*写成`document.getElementById('root')!`，但在这里我们想写的更清楚些。
 
-# :sunglasses:添加样式
+## :sunglasses:添加样式
 
 通过我们的设置为一个组件添加样式很容易。
 若要设置`Hello`组件的样式，我们可以创建这样一个CSS文件`src/components/Hello.css`。
@@ -233,7 +235,7 @@ TypeScript还有一种感叹号（`!`）结尾的语法，它会从前面的表�
 import './Hello.css';
 ```
 
-# 使用Jest编写测试
+## 使用Jest编写测试
 
 我们对`Hello`组件有一些假设。
 让我们在此重申一下：
@@ -302,7 +304,7 @@ it('throws when the enthusiasm level is negative', () => {
 
 这些测试都十分基础，但你可以从中得到启发。
 
-# 添加state管理
+## 添加state管理
 
 到此为止，如果你使用React的目的是只获取一次数据并显示，那么你已经完成了。
 但是如果你想开发一个可以交互的应用，那么你需要添加state管理。
@@ -613,7 +615,7 @@ ReactDOM.render(
 
 注意，`Hello`不再需要props了，因为我们使用了`connect`函数为包裹起来的`Hello`组件的props适配了应用的状态。
 
-# 退出
+## 退出
 
 如果你发现create-react-app使一些自定义设置变得困难，那么你就可以选择不使用它，使用你需要配置。
 比如，你要添加一个Webpack插件，你就可以利用create-react-app提供的“eject”功能。
@@ -629,7 +631,7 @@ npm run eject
 你要注意，在运行eject前最好保存你的代码。
 你不能撤销eject命令，因此退出操作是永久性的除非你从一个运行eject前的提交来恢复工程。
 
-# 下一步
+## 下一步
 
 create-react-app带有很多很棒的功能。
 它们的大多数都在我们工程生成的`README.md`里面有记录，所以可以简单阅读一下。

@@ -1,4 +1,4 @@
-Build tools
+# Build tools
 
 * [Browserify](#browserify)
 * [Duo](#duo)
@@ -9,7 +9,7 @@ Build tools
 * [MSBuild](#msbuild)
 * [NuGet](#nuget)
 
-# Browserify
+## Browserify
 
 ### 安装
 
@@ -38,7 +38,7 @@ browserify()
 
 更多详细信息：[smrq/tsify](https://github.com/smrq/tsify)
 
-# Duo
+## Duo
 
 ### 安装
 
@@ -74,7 +74,7 @@ Duo(__dirname)
 
 更多详细信息：[frankwallis/duo-typescript](https://github.com/frankwallis/duo-typescript)
 
-# Grunt
+## Grunt
 
 ### 安装
 
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
 更多详细信息：[TypeStrong/grunt-ts](https://github.com/TypeStrong/grunt-ts)
 
-# Gulp
+## Gulp
 
 ### 安装
 
@@ -126,7 +126,7 @@ gulp.task("default", function () {
 
 更多详细信息：[ivogabe/gulp-typescript](https://github.com/ivogabe/gulp-typescript)
 
-# Jspm
+## Jspm
 
 ### 安装
 
@@ -138,7 +138,7 @@ _注意：目前jspm的0.16beta版本支持TypeScript_
 
 更多详细信息：[TypeScriptSamples/jspm](https://github.com/Microsoft/TypeScriptSamples/tree/master/jspm)
 
-# Webpack
+## Webpack
 
 ### 安装
 
@@ -173,7 +173,7 @@ module.exports = {
 
 * [awesome-typescript-loader](https://www.npmjs.com/package/awesome-typescript-loader)
 
-# MSBuild
+## MSBuild
 
 更新工程文件，包含本地安装的`Microsoft.TypeScript.Default.props`（在顶端）和`Microsoft.TypeScript.targets`（在底部）文件：
 
@@ -204,7 +204,7 @@ module.exports = {
 
 关于配置MSBuild编译器选项的更多详细信息，请参考：[在MSBuild里使用编译选项](./Compiler Options in MSBuild.md)
 
-# NuGet
+## NuGet
 
 * 右键点击 -> Manage NuGet Packages
 * 查找`Microsoft.TypeScript.MSBuild`
